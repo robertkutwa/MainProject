@@ -4,31 +4,125 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Travel Agency Name</title>
     <link rel="stylesheet" href="styles/styles.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
 </head>
 
 <body>
     <header>
-        <nav class="navbar">  <h1>
-                <img src="Images/NavBarImg.jpeg" alt="SAGE TRAVELS" class="navbar-img">  SAGE TRAVEL AGENCY
+        <nav class="navbar">
+            <h1>
+                <img src="Images/NavBarImg.jpeg" alt="SAGE TRAVELS"
+                    style="height: 50px; vertical-align: middle; margin-right: 10px;"> SAGE TRAVEL AGENCY
             </h1>
             <ul>
                 <li><a href="#">Home</a></li>
-                <li><a href="#About">About</a></li>
-                <li><a href="#packages">Packages</a></li>
-                <li><a href="#Book Now">Booking Form</a></li>
-                <li><a href="#Contact Us">Contact Us</a></li>
-            <a href="#" class="icon" onclick="myFunction()">
+
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">About Us <i class="fas fa-caret-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="#">About Us</a>
+                        <a href="#">Careers</a>
+                        <a href="#">FAQs</a>
+                    </div>
+                </li>
+
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Packages <i class="fas fa-caret-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="#">Adventure Tours</a>
+                        <a href="#">Family Packages</a>
+                        <a href="#">Luxury Getaways</a>
+                        <a href="#">Roadtrips</a>
+                    </div>
+                </li>
+
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Contact Us <i class="fas fa-caret-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="#">Contact Information</a>
+                        <a href="#">Our Team</a>
+                        <a href="#">Send us a Message</a>
+                    </div>
+                </li>
+
+            </ul>
             <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                <i class="fa fa-bars"></i>
+                <i class="fas fa-bars"></i>
             </a>
         </nav>
     </header>
 
-    <script src="js/script.js"></script>
-    <script src="https://kit.fontawesome.com/your-font-awesome-kit.js" crossorigin="anonymous"></script>
+    <main>
+        <section id="contact-us" class="contact-section">
+            <div class="contact-content">
+                <div class="about-company">
+                    <h2>Welcome To Elisa Travel Agency</h2>
+                    <h3>ABOUT OUR COMPANY</h3>
+                    <h4>OVER 25 YEARS EXPERIENCE IN INDUSTRY</h4>
+                    <p>As Best Travel Agency company, Elisa Travel Agency in Kenya is established in the biggest
+                        cities in the world. We offer among others value-added travel solutions and dedicated
+                        services
+                        for all our clients across East Africa.</p>
 
+                    <p>We are the gateway to Asia, Africa, Europe, Australia, North America, South America, and
+                        Antarctica. Our clients come from countries such as: Uganda, Kenya Tanzania, Somalia,
+                        Ethiopia, Rwanda, Burundi, DRC and Southern Sudan.</p>
+                    <img src="images/signature.png" alt="Signature" class="signature">
+                </div>
+
+                <div class="contact-form">
+                    <h3>Enter Your Contact Here</h3>
+                    <h4>SERVICE REQUEST</h4>
+                    <form action="submit_form.php" method="post">
+
+                        <div class="form-group">
+                            <label for="email">E-Mail*:</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="date">Booking Date:</label>
+                            <input type="text" id="datepicker" name="date" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="package">Select a Package:</label>
+                            <select id="package" name="package">
+                                <option value="adventure">Adventure Tours</option>
+                                <option value="family">Family Packages</option>
+                                <option value="luxury">Luxury Getaways</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Payment Options:</label>
+                            <div class="payment-options">
+                                <label><input type="radio" name="payment" value="cash" required> Cash</label>
+                                <label><input type="radio" name="payment" value="card"> Card</label>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Your Message Here*:</label>
+                            <textarea id="message" name="message" required></textarea>
+                        </div>
+                        <button type="submit">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Your Travel Agency Name</p>
+    </footer>
+
+    <script src="java/script.js"></script>
+    <script src="//code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="//code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
 </body>
 
 </html>

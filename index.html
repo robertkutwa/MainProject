@@ -1,128 +1,81 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>Webpage Design</title>  
+    <link rel="stylesheet" href="styles/styles.css">  
+</head>  
+<body>  
+    <div class="main">  
+        <div class="navbar">  
+            <div class="icon">  
+                <h2 class="logo">SAGE</h2>  
+            </div>  
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Travel Agency Name</title>
-    <link rel="stylesheet" href="styles/styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
-</head>
-
-<body>
-    <header>
-        <nav class="navbar">
-            <h1>
-                <img src="Images/NavBarImg.jpeg" alt="SAGE TRAVELS"
-                    style="height: 50px; vertical-align: middle; margin-right: 10px;"> SAGE TRAVEL AGENCY
-            </h1>
-            <ul>
-                <li><a href="#">Home</a></li>
-
-                <li class="dropdown">
-                    <a href="#" class="dropbtn">About Us <i class="fas fa-caret-down"></i></a>
-                    <div class="dropdown-content">
-                        <a href="#">About Us</a>
-                        <a href="#">Careers</a>
-                        <a href="#">FAQs</a>
-                    </div>
-                </li>
-
-                <li class="dropdown">
-                    <a href="#" class="dropbtn">Packages <i class="fas fa-caret-down"></i></a>
-                    <div class="dropdown-content">
-                        <a href="#">Adventure Tours</a>
-                        <a href="#">Family Packages</a>
-                        <a href="#">Luxury Getaways</a>
-                        <a href="#">Roadtrips</a>
-                    </div>
-                </li>
-
-                <li class="dropdown">
-                    <a href="#" class="dropbtn">Contact Us <i class="fas fa-caret-down"></i></a>
-                    <div class="dropdown-content">
-                        <a href="#">Contact Information</a>
-                        <a href="#">Our Team</a>
-                        <a href="#">Send us a Message</a>
-                    </div>
-                </li>
-
-            </ul>
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                <i class="fas fa-bars"></i>
-            </a>
-        </nav>
-    </header>
-
-    <main>
-        <section id="contact-us" class="contact-section">
-            <div class="contact-content">
-                <div class="about-company">
-                    <h2>Welcome To Elisa Travel Agency</h2>
-                    <h3>ABOUT OUR COMPANY</h3>
-                    <h4>OVER 25 YEARS EXPERIENCE IN INDUSTRY</h4>
-                    <p>As Best Travel Agency company, Elisa Travel Agency in Kenya is established in the biggest
-                        cities in the world. We offer among others value-added travel solutions and dedicated
-                        services
-                        for all our clients across East Africa.</p>
-
-                    <p>We are the gateway to Asia, Africa, Europe, Australia, North America, South America, and
-                        Antarctica. Our clients come from countries such as: Uganda, Kenya Tanzania, Somalia,
-                        Ethiopia, Rwanda, Burundi, DRC and Southern Sudan.</p>
-                    <img src="images/signature.png" alt="Signature" class="signature">
-                </div>
-
-                <div class="contact-form">
-                    <h3>Enter Your Contact Here</h3>
-                    <h4>SERVICE REQUEST</h4>
-                    <form action="submit_form.php" method="post">
-
-                        <div class="form-group">
-                            <label for="email">E-Mail*:</label>
-                            <input type="email" id="email" name="email" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="date">Booking Date:</label>
-                            <input type="text" id="datepicker" name="date" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="package">Select a Package:</label>
-                            <select id="package" name="package">
-                                <option value="adventure">Adventure Tours</option>
-                                <option value="family">Family Packages</option>
-                                <option value="luxury">Luxury Getaways</option>
-                            </select>
-                        </div>
-
-                        <div class="form-group">
-                            <label>Payment Options:</label>
-                            <div class="payment-options">
-                                <label><input type="radio" name="payment" value="cash" required> Cash</label>
-                                <label><input type="radio" name="payment" value="card"> Card</label>
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="message">Your Message Here*:</label>
-                            <textarea id="message" name="message" required></textarea>
-                        </div>
-                        <button type="submit">Submit</button>
-                    </form>
-                </div>
+            <div class="menu">  
+                <ul>  
+                    <li><a href="index.html">HOME</a></li>  
+                    <li><a href="about.html">ABOUT</a></li>  
+                    <li><a href="services.html">SERVICES</a></li>  
+                    <li><a href="contact.html">CONTACT</a></li>  
+                </ul>  
             </div>
-        </section>
-    </main>
 
+            <div class="search">  
+                <input class="srch" type="search" name="" placeholder="Type To text">  
+                <a href="#"> <button class="btn">Search</button></a>  
+            </div>  
+
+        </div>   
+        <div class="content">  
+            <h1>SAGE<br><span>TRAVEL</span> <br>AGENCY</h1>  
+            <p class="par">We don't just book trips; we curate transformative travel experiences.
+                 <br>From hidden gems to iconic destinations, SAGE crafts personalized journeys<br>
+                  that expand your horizons and create lasting memories.</p>  
+
+                <div class="form">  
+                    <h2>BOOK NOW</h2>  
+                    <input type="email" id="email" name="email" placeholder="Enter Email Here" required>  
+                    <input type="text" id="destination" name="destination" placeholder="Destination" required>  
+                    <input type="date" id="future_date" name="future_date" required>
+                    <select id="package" name="package">  <option value="">Select a Package (Optional)</option>
+                    <option value="family">Family Adventure Package</option>
+                    <option value="romantic">Romantic Getaway Package</option>
+                    <option value="luxury">Luxury Escapes Package</option>
+                    <option value="adventure">Backpacking Adventure Package</option>
+                    </select> 
+                    <select id="payment_method" name="payment_method" required>  
+                        <option value="" disabled selected>Select Payment Method</option>  
+                        <option value="cash">Cash</option>  
+                        <option value="card">Card</option>  
+                    </select>  
+                    <textarea id="inquiry" name="inquiry" placeholder="Your Inquiry" rows="4" required></textarea>  
+                    <button class="btnn" onclick="submitForm()">Submit</button> 
+
+                </div>  
+            </div>  
+        </div>  
+    </div>  
     <footer>
-        <p>&copy; 2023 Your Travel Agency Name</p>
+        <div class="footer-content">
+            <p>&copy; 2023 SAGE Travel Agency. All rights reserved.</p>
+            <ul class="footer-links">
+                <li><a href="/terms">Terms of Service</a></li>
+                <li><a href="/privacy">Privacy Policy</a></li>
+                <li><a href="/contact">Contact Us</a></li>
+            </ul>
+            <div class="social-icons">
+              <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>  
+              <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>  
+              <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>  
+              <a href="#"><ion-icon name="logo-google"></ion-icon></a>  
+              <a href="#"><ion-icon name="logo-skype"></ion-icon></a>  
+            </div>
+        </div>
     </footer>
-
-    <script src="java/script.js"></script>
-    <script src="//code.jquery.com/jquery-3.6.0.js"></script>
-    <script src="//code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
-</body>
-
+    
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>  
+    <script src="java/script.js"></script> <!-- Include the JavaScript file here -->  
+</body>  
 </html>

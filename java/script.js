@@ -1,10 +1,3 @@
-$(document).ready(function () {
-    $("#bookingForm").submit(function (event) {
-        event.preventDefault();
-        var bookingDate = $("#datepicker").val();
-        alert("Booking date: " + bookingDate);
-    });
-});
 function myFunction() {
     var x = document.getElementsByClassName("navbar")[0];
     if (x.className === "navbar") {
@@ -15,5 +8,21 @@ function myFunction() {
 }
 
 $(function () {
-    $("#datepicker").datepicker({ minDate: 0 }); // minDate: 0 makes past dates disabled
+    $("#datepicker").datepicker({ 
+        minDate: 0,
+        dateFormat: 'yy-mm-dd'
+     }); 
+});
+
+$(document).ready(function() {
+    $('form').on('submit', function(event) {  // Explicitly using .on('submit')
+        event.preventDefault(); 
+
+        var formData = $(this).serialize();
+
+        console.log("Form Data:", formData);
+
+        window.location.href = "thankyou.html"; 
+
+    });
 });

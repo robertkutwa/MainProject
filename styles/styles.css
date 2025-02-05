@@ -6,6 +6,10 @@
 body, html {
     margin: 0;  
     padding: 0;  
+    background-image: url('photo2.jpeg'); /* Ensure the path is correct */
+    background-size: cover; /* Ensure the image covers the entire background */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    background-position: center; /* Center the background image */
 }  
 
 .main {  
@@ -88,9 +92,8 @@ ul li a:hover {
     border-bottom-left-radius: 5px;  
     border-top-left-radius: 5px;  
 }  
-
 .btn {  
-    width: 100px;  
+    width: 20%; /* Changed to percentage for better responsiveness */  
     height: 40px;  
     background: var(--primary-color);  
     border: 2px solid var(--primary-color);  
@@ -111,13 +114,13 @@ ul li a:hover {
 }  
 
 .srch:focus {  
-    outline: none;  
-}  
-
 .content {  
-    width: 1200px;  
+    max-width: 100%;  
     height: auto;  
     margin: auto;  
+    color: #fff;  
+    position: relative;  
+}  
     color: #fff;  
     position: relative;  
 }  
@@ -139,7 +142,7 @@ ul li a:hover {
 }  
 
 .content .cn {  
-    width: 160px;  
+    width: 20%; /* Changed to percentage for better responsiveness */  
     height: 40px;  
     background: var(--primary-color);  
     border: none;  
@@ -171,7 +174,7 @@ ul li a:hover {
     height: auto;  
     background: linear-gradient(to top, rgba(0,0,0,0.8) 50%, rgba(0,0,0,0.8) 50%);  
     position: absolute;  
-    top: -20px;  
+    top: 100px;  
     left: 870px;  
     transform: translate(0%, -5%);  
     border-radius: 10px;  
@@ -199,7 +202,7 @@ ul li a:hover {
     border-top: none;  
     border-right: none;  
     border-left: none;  
-    color: #fff;  
+    color: orangered;  
     font-size: 15px;  
     letter-spacing: 1px;  
     margin-top: 15px; /* Adjusted margin for better spacing */  
@@ -222,7 +225,7 @@ ul li a:hover {
 }  
 
 ::placeholder {  
-    color: #fff;  
+    color: orangered;  
     font-family: Arial;  
 }  
 

@@ -4,27 +4,59 @@ body {
     margin: 0; /* Reset default margin */
 }
 
-header {
-    background-color: #f0f0f0; /* Example header styling */
-    padding: 20px;
-}
+.navbar {  
+    width: 1200px;  
+    height: 75px;  
+    margin: auto;  
+}  
 
-nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex; /* Use Flexbox for navigation */
-    justify-content: center; /* Center the navigation links */
-}
+.icon {  
+    width: 200px;  
+    float: left;  
+    height: 70px;  
+}  
 
-nav li {
-    margin: 0 15px; /* Spacing between navigation links */
-}
+.logo {  
+    color: #ff7200;  
+    font-size: 35px;  
+    font-family: Arial;  
+    padding-left: 20px;  
+    float: left;  
+    padding-top: 10px;  
+    margin-top: 5px;  
+}  
 
-nav a {
-    text-decoration: none;
-    color: #333;
-}
+.menu {  
+    width: 400px;  
+    float: left;  
+    height: 70px;  
+}  
+
+ul {  
+    float: left;  
+    display: flex;  
+    justify-content: center;  
+    align-items: center;  
+}  
+
+ul li {  
+    list-style: none;  
+    margin-left: 62px;  
+    margin-top: 27px;  
+    font-size: 14px;  
+}  
+
+ul li a {  
+    text-decoration: none;  
+    color: orangered;  
+    font-family: Arial;  
+    font-weight: bold;  
+    transition: 0.4s ease-in-out;  
+}  
+
+ul li a:hover {  
+    color: #ff7200;  
+} 
 
 main {
     padding: 20px;
@@ -71,17 +103,3 @@ footer {
     text-align: center;
     padding: 10px;
 }
-
-
-
-/* Media Queries for Responsiveness */
-@media (max-width: 768px) { /* Adjust breakpoint as needed */
-    main {
-        grid-template-columns: 1fr; /* Stack columns vertically on smaller screens */
-    }
-    .map {
-        order: 2; /* Place map below contact form on smaller screens */
-    }
-}
-
-/* Basic form styling - customize as needed */

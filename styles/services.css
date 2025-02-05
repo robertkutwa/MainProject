@@ -1,0 +1,213 @@
+/* services.css */
+
+:root {
+    --primary-color: #ff7200;
+    --font-times: 'Times New Roman', Times, serif;
+}
+
+body {
+    margin: 0;
+    font-family: sans-serif; /* Use a consistent font */
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure full viewport height */
+}
+
+.navbar {  
+    width: 1200px;  
+    height: 75px;  
+    margin: auto;  
+}  
+
+.icon {  
+    width: 200px;  
+    float: left;  
+    height: 70px;  
+}  
+
+.logo {  
+    color: #ff7200;  
+    font-size: 35px;  
+    font-family: Arial;  
+    padding-left: 20px;  
+    float: left;  
+    padding-top: 10px;  
+    margin-top: 5px;  
+}  
+
+.menu {  
+    width: 400px;  
+    float: left;  
+    height: 70px;  
+}  
+
+ul {  
+    float: left;  
+    display: flex;  
+    justify-content: center;  
+    align-items: center;  
+}  
+
+ul li {  
+    list-style: none;  
+    margin-left: 62px;  
+    margin-top: 27px;  
+    font-size: 14px;  
+}  
+
+ul li a {  
+    text-decoration: none;  
+    color: orangered;  
+    font-family: Arial;  
+    font-weight: bold;  
+    transition: 0.4s ease-in-out;  
+}  
+
+ul li a:hover {  
+    color: #ff7200;  
+}  
+
+
+/* Services Section */
+#services {
+    padding: 40px;
+    text-align: center; /* Center the heading */
+}
+
+#services h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid */
+    gap: 20px;
+}
+
+.service-item {
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: left; /* Align text within items to the left */
+    box-sizing: border-box; /* Include padding and border in width */
+}
+
+.service-item h3 {
+    margin-bottom: 10px;
+}
+
+.service-item p {
+    line-height: 1.6;
+}
+
+
+/* Packages Section */
+.packages-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid */
+    gap: 20px;
+    padding: 20px; /* Add some padding around the grid */
+}
+
+.package-item {
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 8px;
+    overflow: hidden; /* Prevent image overflow */
+    display: flex;
+    flex-direction: column;
+}
+
+.package-item img {
+    width: 100%;
+    height: auto;
+    display: block; /* Prevent image spacing issues */
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.package-item h4 {
+    margin: 10px 0;
+}
+
+.package-item p {
+    flex-grow: 1; /* Allow paragraph to take up available space */
+    margin-bottom: 10px;
+}
+
+.package-link {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: var(--primary-color);
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.package-link:hover {
+    background-color: darken(var(--primary-color), 10%);
+}
+
+
+
+/* Footer (from previous example) */
+footer {
+    background: #333;
+    color: #fff;
+    padding: 20px;
+}
+
+.footer-content {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Media Queries (Adjust as needed) */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav li {
+        margin: 10px 0;
+    }
+
+    .service-grid {
+        grid-template-columns: 1fr; /* Stack services vertically */
+    }
+
+    .packages-grid {
+        grid-template-columns: 1fr; /* Stack packages vertically */
+    }
+
+    .package-item img {
+        border-radius: 8px 8px 0 0; /* Keep top corners rounded */
+    }
+
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-links {
+        margin-top: 10px;
+        flex-direction: column;
+    }
+
+    .footer-links li {
+        margin: 5px 0;
+    }
+}

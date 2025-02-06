@@ -70,4 +70,8 @@ Contributions are welcome! Please fork the repository and submit a pull request 
 For any questions or inquiries, please contact us at:
 
 - Email: robertkutwa@gmail.com
-- Website:
+- Website:https://robertkutwa.github.io/MainProject/
+- PhoneNo: 07592453963
+
+  ##LICENSE
+  

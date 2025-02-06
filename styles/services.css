@@ -8,6 +8,7 @@
 body {
     margin: 0;
     font-family: sans-serif; /* Use a consistent font */
+    background-color: aliceblue;
 }
 
 .main {

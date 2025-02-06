@@ -1,11 +1,11 @@
-/* style.css */
+
 body {
     font-family: sans-serif;
-    margin: 0; /* Reset default margin */
+    margin: 0; 
 }
 
 header {
-    background-color: #f0f0f0; /* Example header styling */
+    background-color: #f0f0f0; 
     padding: 20px;
 }
 
@@ -65,8 +65,8 @@ ul li a:hover {
 
 main {
     padding: 20px;
-    display: grid; /* Use Grid for layout */
-    grid-template-columns: 1fr 1fr; /* Two columns */
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
     gap: 20px;
 }
 
@@ -81,7 +81,7 @@ main {
 }
 
 label {
-    display: block; /* Make labels stack above inputs */
+    display: block; 
     margin-bottom: 5px;
 }
 
@@ -90,11 +90,11 @@ input, textarea {
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    box-sizing: border-box; /* Include padding and border in element's total width and height */
+    box-sizing: border-box; 
 }
 
 button {
-    background-color: #007bff; /* Example button color */
+    background-color: #007bff; 
     color: white;
     padding: 10px 15px;
     border: none;

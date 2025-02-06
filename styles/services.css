@@ -111,14 +111,14 @@ ul li a:hover {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid */
     gap: 20px;
-    padding: 20px; /* Add some padding around the grid */
+    padding: 20px; 
 }
 
 .package-item {
     border: 1px solid #ccc;
     padding: 10px;
     border-radius: 8px;
-    overflow: hidden; /* Prevent image overflow */
+    overflow: hidden;
     display: flex;
     flex-direction: column;
 }
@@ -126,7 +126,7 @@ ul li a:hover {
 .package-item img {
     width: 100%;
     height: auto;
-    display: block; /* Prevent image spacing issues */
+    display: block; 
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
 }
@@ -136,7 +136,7 @@ ul li a:hover {
 }
 
 .package-item p {
-    flex-grow: 1; /* Allow paragraph to take up available space */
+    flex-grow: 1; 
     margin-bottom: 10px;
 }
 
@@ -154,9 +154,6 @@ ul li a:hover {
     background-color: darken(var(--primary-color), 10%);
 }
 
-
-
-/* Footer (from previous example) */
 footer {
     background: #333;
     color: #fff;

@@ -171,7 +171,6 @@ footer {
     align-items: center;
 }
 
-/* Media Queries (Adjust as needed) */
 @media (max-width: 768px) {
     .navbar {
         flex-direction: column;
@@ -187,15 +186,15 @@ footer {
     }
 
     .service-grid {
-        grid-template-columns: 1fr; /* Stack services vertically */
+        grid-template-columns: 1fr;
     }
 
     .packages-grid {
-        grid-template-columns: 1fr; /* Stack packages vertically */
+        grid-template-columns: 1fr; 
     }
 
     .package-item img {
-        border-radius: 8px 8px 0 0; /* Keep top corners rounded */
+        border-radius: 8px 8px 0 0; 
     }
 
     .footer-content {

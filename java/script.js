@@ -1,55 +1,46 @@
-// script.js
+document.addEventListener('DOMContentLoaded', () => {
+    const form = document.querySelector('form');
+    const dateInput = document.getElementById('future_date');
 
-document.addEventListener('DOMContentLoaded', function () {
-    const form = document.getElementById('bookingForm');
-    const confirmationMessage = document.getElementById('confirmationMessage');
-    const searchButton = document.querySelector('.btn'); // Get the search button
+    const today = new Date().toISOString().split('T')[0];
+    dateInput.setAttribute('min', today);
 
-    // Form Submission Handling
-    form.addEventListener('submit', function (event) {
+    form.addEventListener('submit', (event) => {
         event.preventDefault();
 
-        const formData = new FormData(form);
+        const inputs = form.querySelectorAll('input, select, textarea');
+        let isEmpty = false;
 
-        fetch('your-server-endpoint', { // Replace with your server URL
-            method: 'POST',
-            body: formData
+        inputs.forEach(input => {
+            if (!input.value.trim()) {
+                alert(`Please fill in the ${input.placeholder || input.id || input.name} field.`);
+                input.focus();
+                isEmpty = true;
+                return;
+            }
+        });
+
+        if (isEmpty) return;
+
+        const confirmationMessage = "Thank you for your inquiry! We will get back to you shortly.";
+        alert(confirmationMessage);
+
+
+        
+        fetch(form.action, {
+            method: form.method,
+            body: new FormData(form)
         })
         .then(response => {
-            if (!response.ok) {
-                throw new Error('Network response was not ok');
+            if (response.ok) {
+                alert("Form submitted successfully!");
+                form.reset();
             }
-            return response.json(); // Or response.text()
-        })
-        .then(data => {
-            console.log('Success:', data);
-            confirmationMessage.style.display = 'block';
-            form.reset();
         })
         .catch(error => {
-            console.error('Error:', error);
-            confirmationMessage.textContent = "An error occurred. Please try again.";
-            confirmationMessage.style.color = "red";
-            confirmationMessage.style.display = 'block';
+            alert("Error submitting form. Please try again.");
+            console.error("Form submission error:", error);
         });
+
     });
-
-    // Search Functionality
-    if (searchButton) { // Check if the button exists (important for pages without it)
-        searchButton.addEventListener('click', function () {
-            const query = document.querySelector('.srch').value.toLowerCase();
-            window.location.href = `services.html?search=${query}`;
-        });
-    }
-
-
-    // Datepicker Initialization (assuming you're using jQuery UI)
-    if (typeof $ === 'function') { // Check if jQuery is loaded
-        $("#future_date").datepicker({
-            minDate: 0,
-            dateFormat: 'yy-mm-dd'
-        });
-    } else {
-        console.error("jQuery is not loaded. Datepicker will not initialize.");
-    }
 });

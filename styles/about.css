@@ -14,51 +14,63 @@ body {
 }
 
 header {
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 20px 0;
+    background-color: #f0f0f0; /* Example header styling */
+    padding: 20px;
 }
 
-.navbar {
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 20px;
-}
+.navbar {  
+    width: 1200px;  
+    height: 75px;  
+    margin: auto;  
+}  
 
-.icon {
-    display: flex;
-    align-items: center;
-}
+.icon {  
+    width: 200px;  
+    float: left;  
+    height: 70px;  
+}  
 
-.logo {
-    color: #ff7200;
-    font-size: 35px;
-    font-family: Arial;
-}
+.logo {  
+    color: #ff7200;  
+    font-size: 35px;  
+    font-family: Arial;  
+    padding-left: 20px;  
+    float: left;  
+    padding-top: 10px;  
+    margin-top: 5px;  
+}  
 
-.menu ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-}
+.menu {  
+    width: 400px;  
+    float: left;  
+    height: 70px;  
+}  
 
-.menu li {
-    margin: 0 1.5em;
-}
+ul {  
+    float: left;  
+    display: flex;  
+    justify-content: center;  
+    align-items: center;  
+}  
 
-.menu a {
-    text-decoration: none;
-    color: #fff;
-    font-weight: bold;
-    transition: 0.4s ease-in-out;
-}
+ul li {  
+    list-style: none;  
+    margin-left: 62px;  
+    margin-top: 27px;  
+    font-size: 14px;  
+}  
 
-.menu a:hover {
-    color: #ff7200;
-}
+ul li a {  
+    text-decoration: none;  
+    color: orangered;  
+    font-family: Arial;  
+    font-weight: bold;  
+    transition: 0.4s ease-in-out;  
+}  
+
+ul li a:hover {  
+    color: #ff7200;  
+}  
 
 main {
     flex: 1;

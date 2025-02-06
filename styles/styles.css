@@ -77,45 +77,54 @@ ul li a:hover {
     color: #ff7200;  
 } 
 
+/* styles/styles.css (or your main stylesheet) */
+
+:root {
+    --primary-color: #ff7200; /* Example primary color */
+}
+
 main {
-    flex-grow: 1;
-    background:goldenrod;
-    background-size: cover;
+    flex: 1; /* Allow main to take up available space */
     background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 40px 0;
+    padding: 40px 0; /* Adjust vertical padding as needed */
+    background: linear-gradient(to top, rgba(0,0,0,0.5) 50%, rgba(0,0,0,0.5) 50%), url(photo2.jpeg); /* Example background image */
+    color: white; /* Default text color in main */
 }
 
 .hero {
-    max-width: 1000px;
-    margin: 0 auto;
+    width: 100%; /* Make hero full width */
     text-align: center;
-    color: #fff;
-    padding: 60px 0;
+    padding: 100px 0; /* Adjust padding as needed */
 }
 
-.hero-content h1 {
-    font-family: 'Times New Roman';
-    font-size: 5em;
+.hero-content {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.hero h1 {
+    font-size: 4em; /* Adjust as needed */
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2em; /* Adjust as needed */
+    line-height: 1.6;
     margin-bottom: 30px;
 }
 
-.hero-content p {
-    font-size: 1.6em;
-    line-height: 1.8;
-    margin-bottom: 40px;
-    padding: 0 40px;
-}
-
 .booking-form {
-    background: rgba(0, 0, 0, 0.7);
-    padding: 50px;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black */
+    padding: 30px;
     border-radius: 10px;
     width: 90%;
-    max-width: 500px;
+    max-width: 400px;
     margin: 0 auto;
     box-sizing: border-box;
 }
@@ -123,8 +132,7 @@ main {
 .booking-form h2 {
     color: #fff;
     text-align: center;
-    font-size: 2em;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 .booking-form input,
@@ -134,27 +142,75 @@ main {
     background: rgba(255, 255, 255, 0.1);
     border: 1px solid #666;
     color: #fff;
-    font-size: 1.1em;
+    font-size: 15px;
     letter-spacing: 1px;
     margin-bottom: 15px;
     font-family: sans-serif;
     box-sizing: border-box;
-    padding: 12px;
+    padding: 10px;
 }
 
 .booking-form textarea {
-    height: 150px;
+    height: 100px; /* Adjust as needed */
 }
 
 .booking-form select {
-    height: 40px;
+    height: 40px; /* Adjust as needed */
 }
 
 .booking-form input:focus,
 .booking-form select:focus,
 .booking-form textarea:focus {
     outline: none;
-    border-color: var(--primary-color);
+    border-color: var(--primary-color); /* Highlight border on focus */
+}
+
+::placeholder {
+    color: #ccc;
+}
+
+.btnn {
+    width: 100%;
+    height: 40px;
+    background: var(--primary-color);
+    border: none;
+    margin-top: 30px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: #fff;
+    transition: 0.3s ease;
+}
+
+.btnn:hover {
+    background: #fff;
+    color: var(--primary-color);
+}
+
+/* Media Queries (Adjust as needed) */
+@media (max-width: 768px) { /* Example breakpoint */
+    .hero h1 {
+        font-size: 3em; /* Adjust for smaller screens */
+    }
+
+    .hero p {
+        font-size: 1em; /* Adjust for smaller screens */
+    }
+
+    .booking-form {
+        padding: 20px; /* Adjust for smaller screens */
+    }
+
+    .booking-form input,
+    .booking-form select,
+    .booking-form textarea {
+        font-size: 14px; /* Adjust for smaller screens */
+        padding: 8px; /* Adjust for smaller screens */
+    }
+
+    .btnn {
+        font-size: 16px; /* Adjust for smaller screens */
+    }
 }
 
 ::placeholder {
@@ -255,15 +311,15 @@ footer {
 
     .booking-form {
         padding: 40px;
-        max-width: 450px;
+        max-width:700px;
 
     }
 
     .booking-form input,
     .booking-form select,
 .booking-form textarea {
-        font-size: 1em;
-        padding: 10px;
+        font-size: 18px;
+        padding: 12px;
     }
 
     .btnn {

@@ -263,6 +263,7 @@ footer {
 
 /* Media Queries (Adjust as needed) */
 @media (max-width: 768px) {
+}
     .navbar {
         flex-direction: column;
         align-items: flex-start;
@@ -277,5 +278,5 @@ footer {
     }
 
     .hero h1 {
-        font-size:
+        font-size: 2em;
     }

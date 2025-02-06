@@ -1,10 +1,8 @@
-/* Root variables for primary colors and fonts */
 :root {
     --primary-color: #ff7200;
     --font-times: 'Times New Roman', Times, serif;
 }
 
-/* Global styles for html and body */
 html, body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -17,9 +15,8 @@ html, body {
     background-position: center;
 }
 
-/* Header styles */
 header {
-    background-color: black; /* Example header styling */
+    background-color: black;
     padding: 20px;
 }
 
@@ -77,8 +74,6 @@ ul li a:hover {
     color: #ff7200;  
 }  
 
-
-/* Hero section styles */
 .hero {
     display: flex;
     justify-content: center;
@@ -103,64 +98,61 @@ ul li a:hover {
 
 }
 
-/* Booking form styles */
+
 .booking-form {  
-    background-color: goldenrod; /* White background for the form */  
-    padding: 20px; /* Inner spacing */  
-    border-radius: 10px; /* Rounded edges */  
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */  
+    background-color: goldenrod;   
+    padding: 20px; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);  
 }  
 
 .booking-form h2 {  
-    font-size: 24px; /* Larger font size for the heading */  
-    margin-bottom: 20px; /* Space below the heading */  
-    color: #333; /* Dark color for text */  
+    font-size: 24px;  
+    margin-bottom: 20px;   
+    color: #333; 
 }  
 
 .booking-form input,   
 .booking-form select,   
 .booking-form textarea {  
-    width: 100%; /* Make input elements full width */  
-    margin-bottom: 15px; /* Space between elements */  
-    padding: 10px; /* Inner spacing for comfort */  
-    border: 1px solid #ddd; /* Light border for inputs */  
-    border-radius: 5px; /* Rounded corners */  
-    font-size: 16px; /* Font size for readability */  
+    width: 100%;  
+    margin-bottom: 15px; 
+    padding: 10px; 
+    border: 1px solid #ddd; 
+    border-radius: 5px; 
+    font-size: 16px; 
 }  
-
-/* Hover and focus effects */  
+ 
 .booking-form input:focus,   
 .booking-form select:focus,   
 .booking-form textarea:focus {  
-    border-color: #007bff; /* Change border color on focus */  
-    outline: none; /* Remove default outline */  
+    border-color: #007bff; 
+    outline: none;  
 }  
 
 .btnn {  
-    background-color: #007bff; /* Button background color */  
-    color: white; /* Text color */  
-    border: none; /* Remove border */  
-    padding: 10px 20px; /* Inner padding */  
-    border-radius: 5px; /* Rounded corners */  
-    font-size: 16px; /* Consistent font size */  
-    cursor: pointer; /* Show pointer on hover */  
-    transition: background-color 0.3s; /* Smooth background change */
+    background-color: #007bff; 
+    color: white;
+    border: none; 
+    padding: 10px 20px; 
+    border-radius: 5px; 
+    font-size: 16px; 
+    cursor: pointer;
+    transition: background-color 0.3s; 
     align-items:center ;  
 }  
 
 .btnn:hover {  
-    background-color: #0056b3; /* Darker color on hover */ 
+    background-color: #0056b3; 
     align-items: center; 
 }  
 
-/* Responsive adjustments */  
 @media(max-width: 600px) {  
     .booking-form {  
-        padding: 15px; /* Adjust padding for small screens */  
+        padding: 15px;
     }  
 }  
 
-/* Footer styles */
 footer {
     background-color: rgba(0, 0, 0, 0.7);
     padding: 20px;

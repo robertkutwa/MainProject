@@ -23,35 +23,51 @@ SAGE Travel Agency is dedicated to crafting transformative travel experiences. T
 
 ## Features
 
-- **Homepage:** Welcomes visitors with a compelling headline, value proposition, and a prominent booking form.
-- **Navigation:** Easy-to-use navigation bar for accessing different sections of the website (Home, About, Services, Contact).
-- **Services:** Showcases the various travel services offered by the agency (e.g., flight bookings, hotel reservations, guided tours, cruises, car rentals).
-- **Travel Packages:** Highlights curated travel packages with enticing descriptions and visuals.
-- **Booking Form:** A user-friendly form for submitting booking inquiries, including fields for email, destination, travel date, package selection, payment method, number of individuals, and special inquiries.
-- **Confirmation Message:** Displays a confirmation message upon successful form submission.
-- **Error Handling:** Provides user-friendly error messages for form validation and submission issues.
-- **Responsive Design:** Adapts seamlessly to different screen sizes (desktop, tablet, mobile).
-- **Footer:** Contains copyright information, links to terms of service, privacy policy, contact information, and social media icons.
+- **Homepage:** 
+- **Navigation:** 
+- **Services:** 
+- **Travel Packages:** 
+- **Booking Form:**  
+- **Confirmation Message:** 
+- **Error Handling:** 
+- **Responsive Design:** 
+- **Footer:** 
 
 ## Technologies Used
 
-- **HTML:** Structure and content of the web pages.
-- **CSS:** Styling and layout of the website.
-- **JavaScript:** Interactive elements, form handling, and dynamic functionality.
-- **jQuery (and jQuery UI - for datepicker):** Simplifies DOM manipulation and provides UI widgets.
-- **Ionicons:** Icon library for social media icons.
+- **HTML:** 
+- **CSS:** 
+- **JavaScript:** 
+- **Ionicons:** 
 
 ## Installation
 
-1. Clone the repository: `git clone https://github.com/[your-username]/[your-repository-name].git`
-2. Navigate to the project directory: `cd [your-repository-name]`
-3. Open the `index.html` file in your web browser.
+1. Clone the repository: `https://github.com/robertkutwa/MainProject`
+2. Open the `index.html` file in your web browser.
 
 ## Usage
 
-1. **Navigation:** Use the navigation bar to explore the different sections of the website.
-2. **Booking Form:** Fill out the booking form with your travel details and submit the form.
-3. **Confirmation:** A confirmation message will appear upon successful submission.
-4. **Search:** Use the search bar to find specific content on the website.
+1. **Navigation:**
+2. **Booking Form:** 
+3. **Confirmation:**
 
 ## File Structure
+
+The file consists of 4 pages
+            -**HomePage**
+            -**AboutPage**
+            -**ServicesPage** // also contains packages that are offered by the agency
+            -**Contactpage**
+the file also contains css for each page 
+-**javascript**
+
+## Contributing
+
+Contributions are welcome! Please fork the repository and submit a pull request with your changes.
+
+## Contact
+
+For any questions or inquiries, please contact us at:
+
+- Email: robertkutwa@gmail.com
+- Website:
